@@ -1,3 +1,5 @@
+/*First Mobile / Primero Movil */
+
 #contenedor {
     width: 100%;
     margin: auto;
@@ -10,4 +12,72 @@ header {
 
 nav {
     text-align: center;
+}
+
+#Somos{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+#imgSomos {
+    margin: auto;
+    width: 100%;
+}
+
+
+#imagen {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+#imgSomos1, #imagen1{
+    display: none;
+}
+
+
+/* Para PC */
+
+@media (min-width: 768px) {
+
+    #contenedor {
+        width: 90%;
+    }
+    
+    #imgSomos ,#imagen {
+        display: none;
+    }
+
+    #imgSomos1, #imagen1{
+        display: block;
+    }
+
+    #imgSomos1{
+        width: 100%;
+        margin: auto;
+    }
+    
+    #imagen1{
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    h1{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 20px;
+    }
 }
