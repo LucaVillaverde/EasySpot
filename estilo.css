@@ -84,27 +84,20 @@ header {
     margin-bottom: 25px;
 }
 
-
-
-#imgSomos {
+#contenedorImagenes{
+    width: 90%;
     margin: auto;
+}
+
+#imagenMovil{
     width: 100%;
 }
 
-
-#imagen {
-    max-width: 100%;
-    width: 100%;
-    display: block;
-}
-
-#imgSomos1, #imagen1{
+#imagenPC{
     display: none;
 }
 
-
-
-/* Para PC */
+/* Para PC 768px de ancho en adelante */
 
 @media (min-width: 768px) {
 
@@ -113,8 +106,21 @@ header {
         justify-content: space-between;
     }
 
-    #imagen1{
-        width: 50px; /* <-- Queda ver tamaño*/
+    
+    #imagenPC, #imagenMovil{
+        display: block;
+        width: 100%; /* <-- Queda ver tamaño*/
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #imagenPC{
+        padding-bottom: 30px;
+    }
+    
+    #Somos{
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     #contenedor {
@@ -125,24 +131,22 @@ header {
         width: 100%;
         margin: auto;
     }
-    
-    #imgSomos ,#imagen {
-        display: none;
+}
+
+/* ------------------------------ */
+
+/* PC de 1024px de ancho en adelante */
+@media (min-width: 1024px) {
+    #imagenPC{
+        padding-top: 50px;
     }
 
-    #imgSomos1, #imagen1{
-        display: block;
+    #imagenMovil{
+        padding-bottom: 20px;
     }
 
-    #imgSomos1{
-        width: 100%;
-        margin: auto;
-    }
-    
-    #imagen1{
-        max-width: 100%;
-        width: 100%;
-        margin: auto;
+    p {
+        font-size: 22px;
     }
 }
 
@@ -155,3 +159,4 @@ header {
         font-size: 20px;
     }
 }
+
