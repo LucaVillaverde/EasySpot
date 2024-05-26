@@ -4,11 +4,47 @@ body{
     background-color: #ddd;
 }
 
+#contenedor {
+    width: 100%;
+    margin: auto;
+}
+
 header {
     width: 100%;
     margin: auto;
     text-align: center;
 }
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* ---- BARRA  NAVEGACION ----*/
+.navbar{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:  10px;
+}
+
+.navbar_item{
+    background-color: #4750ff;
+    transition: background-color  2.1s;  
+}
+
+.navbar a{
+    padding: 5px 0;
+    text-align: center;
+    display: block;
+    color: #ddd;
+    border: 1px solid black;
+}
+
+
 
 #Banner{
     width: 100%;
@@ -50,7 +86,7 @@ p{
 @media (min-width: 768px) {
 
     #contenedor {
-        width: 90% !important;
+        width: 90%;
     }
     
     #imgSomos ,#imagen {
