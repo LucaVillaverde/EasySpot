@@ -1,13 +1,18 @@
 /*First Mobile / Primero Movil */
 
 body{
-    background-color: #ddd;
+    background-image: url(/Images/FondoEasySpot.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    color: #ddd;
 }
 
 
 
-h1{
-    text-align: center;
+h1, h2{
+    text-decoration: underline;
 }
 
 p{
@@ -54,10 +59,11 @@ main {
 }
 
 .navbar_item a:hover{
-    background-color: #2EF5FF;
-    color: #000;
-    transition-property: background-color, color;
-    transition-duration: 1.6s, 1.6s;
+    color: #43D023;
+    text-shadow: 4px 4px 5px #0f5000;
+    font-weight: bold;
+    transition-property: color, font-weight, text-shadow;
+    transition-duration: 1.3s, 1.3s, 1.3s;
 }
 
 
@@ -67,7 +73,7 @@ main {
     text-align: center;
     display: block;
     color: #fff;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 /* ----------------------------- */
