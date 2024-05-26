@@ -15,6 +15,11 @@ header {
     text-align: center;
 }
 
+#head {
+    width: 90%;
+    margin: auto;
+}
+
 a{
     text-decoration: none;
 }
@@ -32,19 +37,27 @@ li{
 }
 
 .navbar_item{
-    background-color: #4750ff;
-    transition: background-color  2.1s;  
+    background-color: #4750ff; 
 }
+
+.navbar_item a:hover{
+    background-color: #2EF5FF;
+    color: #000;
+    transition-property: background-color, color;
+    transition-duration: 1.6s, 1.6s;
+}
+
+
 
 .navbar a{
     padding: 5px 0;
     text-align: center;
     display: block;
-    color: #ddd;
+    color: #fff;
     border: 1px solid black;
 }
 
-
+/* ----------------------------- */
 
 #Banner{
     width: 100%;
@@ -87,6 +100,11 @@ p{
 
     #contenedor {
         width: 90%;
+    }
+
+    #head {
+        width: 100%;
+        margin: auto;
     }
     
     #imgSomos ,#imagen {
