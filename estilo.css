@@ -4,20 +4,14 @@ body{
     background-color: #ddd;
 }
 
-#contenedor {
-    width: 100%;
-    margin: auto;
-}
 
-header {
-    width: 100%;
-    margin: auto;
+
+h1{
     text-align: center;
 }
 
-#head {
-    width: 90%;
-    margin: auto;
+p{
+    text-align: justify;
 }
 
 a{
@@ -27,6 +21,27 @@ a{
 li{
     list-style: none;
 }
+
+header {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+#contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+
+#head {
+    width: 90%;
+    margin: auto;
+}
+
+
 
 /* ---- BARRA  NAVEGACION ----*/
 .navbar{
@@ -69,13 +84,7 @@ li{
     margin-bottom: 25px;
 }
 
-h1{
-    text-align: center;
-}
 
-p{
-    text-align: justify;
-}
 
 #imgSomos {
     margin: auto;
@@ -94,9 +103,19 @@ p{
 }
 
 
+
 /* Para PC */
 
 @media (min-width: 768px) {
+
+    main{ /*<-- Provisorio como div que cubre text | imagen en pc*/
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #imagen1{
+        width: 50px; /* <-- Queda ver tamaño*/
+    }
 
     #contenedor {
         width: 90%;
