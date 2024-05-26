@@ -1,17 +1,18 @@
 /*First Mobile / Primero Movil */
 
-#contenedor {
-    width: 100%;
-    margin: auto;
+body{
+    background-color: #ddd;
 }
 
 header {
     width: 100%;
+    margin: auto;
     text-align: center;
 }
 
-nav {
-    text-align: center;
+#Banner{
+    width: 100%;
+    margin: auto;
 }
 
 #Somos{
@@ -49,7 +50,7 @@ p{
 @media (min-width: 768px) {
 
     #contenedor {
-        width: 90%;
+        width: 90% !important;
     }
     
     #imgSomos ,#imagen {
