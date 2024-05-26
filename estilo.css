@@ -28,19 +28,17 @@ header {
     text-align: center;
 }
 
+main {
+    width: 90%;
+    margin: auto;
+}
+
 
 
 #contenedor {
     width: 100%;
     margin: auto;
 }
-
-
-#head {
-    width: 90%;
-    margin: auto;
-}
-
 
 
 /* ---- BARRA  NAVEGACION ----*/
@@ -101,7 +99,7 @@ header {
 
 @media (min-width: 768px) {
 
-    main{ /*<-- Provisorio como div que cubre text | imagen en pc*/
+    .contenido{ /*<-- Provisorio como div que cubre text | imagen en pc*/
         display: flex;
         justify-content: space-between;
     }
@@ -127,7 +125,7 @@ header {
         width: 90%;
     }
 
-    #head {
+    main {
         width: 100%;
         margin: auto;
     }
