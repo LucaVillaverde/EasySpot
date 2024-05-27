@@ -95,13 +95,15 @@ main {
 
 #imagenMovil{
     width: 100%;
+    height: auto;
+    margin-bottom: 25px;
 }
 
 #imagenPC{
     display: none;
 }
 
-/* Para PC 768px de ancho en adelante */
+/* Para Tablet 768px de ancho en adelante */
 
 @media (min-width: 768px) {
 
@@ -114,12 +116,17 @@ main {
     #imagenPC, #imagenMovil{
         display: block;
         width: 100%; /* <-- Queda ver tamaño*/
+        height: auto;
         padding-left: 15px;
         padding-right: 15px;
     }
 
     #imagenPC{
-        padding-bottom: 30px;
+        padding-bottom: 33px;
+    }
+
+    #imagenMovil{
+        padding-top: 30px;
     }
     
     #Somos{
@@ -142,25 +149,68 @@ main {
 /* PC de 1024px de ancho en adelante */
 @media (min-width: 1024px) {
     #imagenPC{
-        padding-top: 50px;
+        padding-bottom: 100px;
     }
 
     #imagenMovil{
-        padding-bottom: 20px;
+        padding-top: 30px;
     }
 
     p {
         font-size: 22px;
     }
 }
+/* ------------------------------- */
+
+/* PC de 1440px de ancho en adelante */
 
 @media (min-width: 1440px) {
+
+    #imagenPC{
+        padding-bottom: 30px;
+        padding-top: 55px;
+    }
+
+    #imagenMovil{
+        padding-top: 34px;
+    }
+
     h1{
         font-size: 36px;
     }
 
     p{
-        font-size: 20px;
+        font-size: 27px;
     }
 }
 
+/* ------------------------------- */
+
+/* PC/TV de 2560px de ancho en adelante */
+
+@media (min-width: 2560px) {
+
+    .contenido {
+        padding-top: 30px;
+    }
+
+    #Somos{
+        padding-right: 90px;
+    }
+
+    #contenedorImagenes{
+        padding-right: 30px;
+    }
+
+    #textoTienda{
+        padding-top: 40px;
+    }
+
+    h1,h2{
+        font-size: 54px;
+    }
+
+    p{
+        font-size: 47px;
+    }
+}
