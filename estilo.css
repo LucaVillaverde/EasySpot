@@ -149,7 +149,8 @@ main {
 /* PC de 1024px de ancho en adelante */
 @media (min-width: 1024px) {
     #imagenPC{
-        padding-bottom: 100px;
+        padding-top: 68px;
+        padding-bottom: 0px;
     }
 
     #imagenMovil{
@@ -161,6 +162,13 @@ main {
     }
 }
 /* ------------------------------- */
+
+/* PC de 1280px de ancho en adelante */
+@media (min-width: 1280px) {
+    #imagenPC{
+        padding-bottom: 20px;
+    }
+}
 
 /* PC de 1440px de ancho en adelante */
 
