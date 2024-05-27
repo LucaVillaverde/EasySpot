@@ -149,8 +149,8 @@ main {
 /* PC de 1024px de ancho en adelante */
 @media (min-width: 1024px) {
     #imagenPC{
-        padding-top: 68px;
-        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 70px;
     }
 
     #imagenMovil{
