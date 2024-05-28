@@ -1,10 +1,12 @@
 /*First Mobile / Primero Movil */
 
 body{
-    background-color: #ddd;
+    background-color: white;
 }
 
-
+h1, h2, p{
+    color: #393939;
+}
 
 h1, h2{
     text-decoration: underline;
@@ -35,7 +37,7 @@ main {
 
 
 
-#contenedor {
+.contenedor {
     width: 100%;
     margin: auto;
 }
@@ -129,7 +131,7 @@ main {
         padding-left: 15px;
     }
 
-    #contenedor {
+    .contenedor {
         width: 90%;
     }
 
@@ -157,6 +159,22 @@ main {
     }
 }
 /* ------------------------------- */
+
+@media (min-width: 1097px) {
+    #imagenPC{
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1139px) {
+    #imagenPC{
+        padding-bottom: 0px;
+    }
+
+    #imagenMovil{
+        padding-top: 20px;
+    }
+}
 
 /* PC de 1280px de ancho en adelante */
 @media (min-width: 1280px) {
