@@ -166,7 +166,8 @@ main {
 /* PC de 1280px de ancho en adelante */
 @media (min-width: 1280px) {
     #imagenPC{
-        padding-bottom: 20px;
+        padding-bottom: 0px;
+        padding-top: 60px;
     }
 }
 
