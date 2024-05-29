@@ -9,10 +9,11 @@ h1, h2, p{
 }
 
 h1, h2{
+    text-align: center;
     text-decoration: underline;
 }
 
-p{
+p {
     text-align: justify;
 }
 
@@ -34,7 +35,6 @@ main {
     width: 90%;
     margin: auto;
 }
-
 
 
 .contenedor {
@@ -104,7 +104,11 @@ main {
 
 @media (min-width: 768px) {
 
-    .contenido{ /*<-- Provisorio como div que cubre text | imagen en pc*/
+    h1,h2{
+        text-align: left;
+    }
+
+    .contenido{
         display: flex;
         justify-content: space-between;
     }
@@ -112,23 +116,24 @@ main {
     
     #imagenPC, #imagenMovil{
         display: block;
-        width: 100%; /* <-- Queda ver tamaño*/
+        width: 100%; 
         height: auto;
         padding-left: 15px;
         padding-right: 15px;
     }
 
     #imagenPC{
-        padding-bottom: 33px;
+        padding-bottom: 0px;
     }
 
     #imagenMovil{
-        padding-top: 30px;
+        padding-top: 100px;
+        margin-bottom: 60px;
     }
     
     #Somos{
         padding-right: 15px;
-        padding-left: 15px;
+        text-align: left;
     }
 
     .contenedor {
@@ -146,12 +151,13 @@ main {
 /* PC de 1024px de ancho en adelante */
 @media (min-width: 1024px) {
     #imagenPC{
-        padding-top: 0px;
-        padding-bottom: 70px;
+        padding-top: 14px;
+        padding-bottom: 17px;
     }
 
     #imagenMovil{
-        padding-top: 30px;
+        padding-top: 150px;
+        padding-bottom: 30px;
     }
 
     p {
@@ -180,7 +186,7 @@ main {
 @media (min-width: 1280px) {
     #imagenPC{
         padding-bottom: 0px;
-        padding-top: 60px;
+        padding-top: 12px;
     }
 }
 
@@ -188,13 +194,17 @@ main {
 
 @media (min-width: 1440px) {
 
+    #tituloSomos{
+        padding-top: 15px;
+    }
+
     #imagenPC{
-        padding-bottom: 30px;
-        padding-top: 55px;
+        padding-bottom: 0px;
+        padding-top: 17px;
     }
 
     #imagenMovil{
-        padding-top: 34px;
+        padding-top: 8px;
     }
 
     h1{
@@ -208,12 +218,22 @@ main {
 
 /* ------------------------------- */
 
+/* PC de 1600px de ancho en adelante */
+
+@media (min-width: 1592px){
+    p{
+        font-size: 30px;
+    }
+}
+
+/*-----------------------------------*/
+
 /* PC/TV de 2560px de ancho en adelante */
 
 @media (min-width: 2560px) {
 
     .contenido {
-        padding-top: 30px;
+        padding-top: 0px;
     }
 
     #Somos{
@@ -234,5 +254,9 @@ main {
 
     p{
         font-size: 47px;
+    }
+
+    #imagenPC{
+        padding-bottom: 12px;
     }
 }
