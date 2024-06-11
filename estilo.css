@@ -4,259 +4,72 @@ body{
     background-color: white;
 }
 
-h1, h2, p{
-    color: #000;
-}
+/*-----------------------------*/
 
-h1, h2{
-    text-align: center;
-    text-decoration: underline;
-}
+/*Barra de navegación aquí*/
 
-p {
-    text-align: justify;
-}
-
-a{
-    text-decoration: none;
-}
-
-li{
-    list-style: none;
-}
-
-header {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
-
-main {
-    width: 90%;
-    margin: auto;
-}
-
-
-.contenedor {
-    width: 100%;
-    margin: auto;
-}
-
-
-/* ---- BARRA  NAVEGACION ----*/
-.navbar{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:  10px;
-}
-
-.navbar_item{
-    background-color: #4750ff; 
-}
-
-.navbar_item a:hover{
-    color: #43D023;
-    text-shadow: 4px 4px 5px #0f5000;
-    font-weight: bold;
-    transition-property: color, font-weight, text-shadow;
-    transition-duration: 1.3s, 1.3s, 1.3s;
-}
-
-
-
-.navbar a{
-    padding: 5px 0;
-    text-align: center;
+#navegacion{
+    z-index: 1000;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
     display: block;
-    color: #fff;
-    border: 2px solid black;
-}
-
-/* ----------------------------- */
-
-#Banner{
-    width: 100%;
-    margin: auto;
-}
-
-#Somos{
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-#contenedorImagenes{
-    width: 90%;
-    margin: auto;
-}
-
-#imagenMovil{
-    width: 100%;
-    height: auto;
-    margin-bottom: 25px;
-}
-
-#imagenPC{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #aContacto{
+    margin-right: 0px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  
+  .topnav .icon {
     display: none;
-}
-
-/* Para Tablet 768px de ancho en adelante */
-
-@media (min-width: 768px) {
-
-    h1,h2{
-        text-align: left;
-    }
-
-    .contenido{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    
-    #imagenPC, #imagenMovil{
-        display: block;
-        width: 100%; 
-        height: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    #imagenPC{
-        padding-bottom: 0px;
-    }
-
-    #imagenMovil{
-        padding-top: 100px;
-        margin-bottom: 60px;
-    }
-    
-    #Somos{
-        padding-right: 15px;
-        text-align: left;
-    }
-
-    .contenedor {
-        width: 90%;
-    }
-
-    main {
-        width: 100%;
-        margin: auto;
-    }
-}
-
-/* ------------------------------ */
-
-/* PC de 1024px de ancho en adelante */
-@media (min-width: 1024px) {
-    #imagenPC{
-        padding-top: 14px;
-        padding-bottom: 17px;
-    }
-
-    #imagenMovil{
-        padding-top: 150px;
-        padding-bottom: 30px;
-    }
-
-    p {
-        font-size: 22px;
-    }
-}
-/* ------------------------------- */
-
-@media (min-width: 1097px) {
-    #imagenPC{
-        padding-bottom: 30px;
-    }
-}
-
-@media (min-width: 1139px) {
-    #imagenPC{
-        padding-bottom: 0px;
-    }
-
-    #imagenMovil{
-        padding-top: 20px;
-    }
-}
-
-/* PC de 1280px de ancho en adelante */
-@media (min-width: 1280px) {
-    #imagenPC{
-        padding-bottom: 0px;
-        padding-top: 12px;
-    }
-}
-
-/* PC de 1440px de ancho en adelante */
-
-@media (min-width: 1440px) {
-
-    #tituloSomos{
-        padding-top: 15px;
-    }
-
-    #imagenPC{
-        padding-bottom: 0px;
-        padding-top: 17px;
-    }
-
-    #imagenMovil{
-        padding-top: 8px;
-    }
-
-    h1{
-        font-size: 36px;
-    }
-
-    p{
-        font-size: 27px;
-    }
-}
-
-/* ------------------------------- */
-
-/* PC de 1600px de ancho en adelante */
-
-@media (min-width: 1592px){
-    p{
-        font-size: 30px;
-    }
-}
-
-/*-----------------------------------*/
-
-/* PC/TV de 2560px de ancho en adelante */
-
-@media (min-width: 2560px) {
-
-    .contenido {
-        padding-top: 0px;
-    }
-
-    #Somos{
-        padding-right: 90px;
-    }
-
-    #contenedorImagenes{
-        padding-right: 30px;
-    }
-
-    #textoTienda{
-        padding-top: 40px;
-    }
-
-    h1,h2{
-        font-size: 54px;
-    }
-
-    p{
-        font-size: 47px;
-    }
-
-    #imagenPC{
-        padding-bottom: 12px;
-    }
-}
+  }
+  
+  .topnav a img{
+    max-width: 48px;
+  }
+  
+  #contenedorLogo{
+    width: 48px;
+    height: 48px;
+    float: left;
+    background-image: url(imagenes_procesadas/LogoNavBar.webp);
+    background-size: cover;
+  }
+  
+  #aInicio{
+    text-align: center;
+    padding-right: 50px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 90%;
+  }
+  
+  .display {
+    display: none;
+  }
+  
+  .myLinks {
+    display: block;
+  }
